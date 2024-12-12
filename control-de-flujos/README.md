@@ -7,7 +7,7 @@
 * Uso de funciones
 * Proyecto de la sección
 
-
+---------------
 ### Operadores booleanos
 
 Los operadores relacionales y lógicos son utilizados en conjunto en las expresiones lógicas de __GO__ para evaluar condiciones complejas y producir un resultado booleano (verdadero o falso).
@@ -78,7 +78,7 @@ Niega el valor booleano de una expresión, es decir, si una expresión es verdad
 (!)
 ```
 
-
+---------------
 ### Declaración de IF - ELSE
 
 Se utilizan para ejecutar un bloque de código si se cumple una condición booleana, y si no se cumple no se ejecuto o se ejecuta la segunda condición del bloque de código.
@@ -117,3 +117,37 @@ if tiempo := time.Now(); tiempo.Hour() < 12 {
     fmt.Println("Buenas noches - Es de noche")
 }
 ```
+
+---------------
+### Declaración de Switch
+
+Se utiliza colocando la palabra reservada __switch__ está nos permitira evalúar un valor en base a diferentes casos __case__ definidos. Cuando el valor coincida con algúno de los casos se ejcutara el bloque de código contenido dentro del caso.
+
+Al igual que todos los lenguajes contiene una __default__ donde se ejecutara ese bloque, en el momento en que no se cumpla o no coincida con los __case__ definidos
+
+__NOTA__: Destacar que aunque exite la expresión __break__ para detener la ejecución en ese punto ya no es necesario.
+
+```Go
+switch valor {
+case useCase:
+    // bloque de código a ejecutar si cumple
+default:
+    // Si no hay caso que coicida
+}
+```
+
+__NOTA__: En __Go__ es posible definir o declarar e iniciarlizar las variables dentro de una condición y esta variable solo estará disponible en el scope del switch
+
+```Go
+switch system := runtime.GOOS; system {
+case "windows":
+    fmt.Println("Windows.")
+case "darwin":
+    fmt.Println("OS X.")
+case "linux":
+    fmt.Println("Linux.")
+default:
+    fmt.Printf("%s.\n", system)
+}
+```
+
