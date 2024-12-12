@@ -77,3 +77,43 @@ Niega el valor booleano de una expresión, es decir, si una expresión es verdad
 ```
 (!)
 ```
+
+
+### Declaración de IF - ELSE
+
+Se utilizan para ejecutar un bloque de código si se cumple una condición booleana, y si no se cumple no se ejecuto o se ejecuta la segunda condición del bloque de código.
+
+__NOTA:__ La condición que se evalúa en un IF en __Go__ se debe colocar sin parentesís a diferencia de otros lenguajes de programación.
+
+
+```Go
+if condicion {
+    // Si se cumple la condición se ejecuta el bloque de código
+} else {
+    // en caso de que no se cumpla la condición
+}
+```
+
+De igual forma podemos evalúar más condiciones con ELSE IF
+
+```Go
+if condicion {
+    // Si se cumple la condición se ejecuta el bloque de código
+} else if codicion2 {
+    // en caso de que no se cumpla la primera condición
+} else {
+    // en caso de que no se cumpla ningúna de las condiciones
+}
+```
+
+__NOTA__: En __Go__ es posible definir o declarar e iniciarlizar las variables dentro de una condición y esta variable solo estará disponible en el scope del IF.
+
+```Go
+if tiempo := time.Now(); tiempo.Hour() < 12 {
+    fmt.Println("Buenos días - Es de mañana")
+} else if tiempo.Hour() < 17 {
+    fmt.Println("Buenas tardes - Es de tarde")
+} else {
+    fmt.Println("Buenas noches - Es de noche")
+}
+```
