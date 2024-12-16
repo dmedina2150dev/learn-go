@@ -1,4 +1,4 @@
-## Usos de los controles de flujos
+# Usos de los controles de flujos
 
 * Operadores booleanos
 * Declaración de IF - ELSE
@@ -8,7 +8,7 @@
 * Proyecto de la sección
 
 ---------------
-### Operadores booleanos
+## Operadores booleanos
 
 Los operadores relacionales y lógicos son utilizados en conjunto en las expresiones lógicas de __GO__ para evaluar condiciones complejas y producir un resultado booleano (verdadero o falso).
 
@@ -79,7 +79,7 @@ Niega el valor booleano de una expresión, es decir, si una expresión es verdad
 ```
 
 ---------------
-### Declaración de IF - ELSE
+## Declaración de IF - ELSE
 
 Se utilizan para ejecutar un bloque de código si se cumple una condición booleana, y si no se cumple no se ejecuto o se ejecuta la segunda condición del bloque de código.
 
@@ -119,7 +119,7 @@ if tiempo := time.Now(); tiempo.Hour() < 12 {
 ```
 
 ---------------
-### Declaración de Switch
+## Declaración de Switch
 
 Se utiliza colocando la palabra reservada __switch__ está nos permitira evalúar un valor en base a diferentes casos __case__ definidos. Cuando el valor coincida con algúno de los casos se ejcutara el bloque de código contenido dentro del caso.
 
@@ -151,3 +151,62 @@ default:
 }
 ```
 
+## Bucle For
+
+En __Go__ el bucle FOR es la unica estructura de control repetitiva disponible, pero esta puede ser usada de diferentes maneras, para conseguir diferentes funcionalidades. Como crear un bucle infinito, un bucle con una condición o el tipico Bucle For, como tambien iterar colecciones de datos.
+
+
+> Declarar un bucle infinito
+
+```Go
+for {
+
+}
+```
+
+> Declarar bucle con una condición
+
+```Go
+for condición {
+
+}
+```
+
+Ejemplos: 
+
+```Go
+var i int
+
+for i <= 10 {
+    fmt.Println(i)
+    i++
+}
+
+for j := 0; j <= 10; j++ {
+    fmt.Println(j)
+}
+```
+
+### Break
+Es una palabra clave del lenguaje __Go__, se utiliza para salir de un bucle antes de que la condición de finalización se haya alcanzado
+
+```Go
+for j := 0; j <= 10; j++ {
+    fmt.Println(j)
+    if j == 5 {
+        break
+    }
+}
+```
+
+### Continue
+Esta palabra clave, se utiliza para saltar a la siguiente iteración de un bucle sin ejecutar el coódigo que esta despues de esta sentencia o palabra clave.
+
+```Go
+for j := 0; j <= 10; j++ {
+    if j == 5 {
+        continue
+    }
+    fmt.Println(j)
+}
+```
