@@ -1,11 +1,11 @@
-package main
+package triangulo_rectangulo
 
 import (
 	"fmt"
 	"math"
 )
 
-func main() {
+func TrianguloRectangulo() {
 	// Definicion de variables necesarias
 	var lado1, lado2 float64
 	const presicion = 2

@@ -1,4 +1,4 @@
-package main
+package app1
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"rsc.io/quote"
 )
 
-func main() {
+func App1() {
 	fmt.Println("Hola Mundo!!!")
 	fmt.Println(quote.Hello())
 }

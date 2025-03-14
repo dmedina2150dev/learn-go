@@ -1,4 +1,4 @@
-package main
+package go_routing
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ func hola() {
 	fmt.Println("Hola esto es una gorutina")
 }
 
-func main() {
+func GoRouting() {
 	go hola()
 	time.Sleep(1 * time.Second)
 	fmt.Println("Hola esto es el main")

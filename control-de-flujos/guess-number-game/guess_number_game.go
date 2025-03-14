@@ -1,4 +1,4 @@
-package main
+package controldeflujos
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func main() {
+func GameGuessNumber() {
 	t := time.Now() // Obtiene la hora actual
 	hora := t.Hour()
 

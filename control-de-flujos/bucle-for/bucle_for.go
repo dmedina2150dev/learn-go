@@ -1,8 +1,8 @@
-package main
+package controldeflujos
 
 import "fmt"
 
-func main() {
+func BucleFor() {
 	var i int
 
 	for i <= 10 {
