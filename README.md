@@ -72,3 +72,18 @@ import (
 )
 ```
 
+## Comandos para ejecutar programa
+
+> Levanta la aplicación en local
+
+```go
+go run [name-main-file].go
+
+```
+
+> Compila la aplicación en un ejecutable
+
+```go
+go build [name-main-file].go
+
+```
