@@ -2,7 +2,6 @@ package controldeflujos
 
 import (
 	"fmt"
-	"runtime"
 	"time"
 )
 
@@ -48,31 +47,5 @@ func GameGuessNumber() {
 		fmt.Println("Buenas tardes - Es de tarde --> Con switch")
 	default:
 		fmt.Println("Buenas noches - Es de noche --> Con switch")
-	}
-
-	os := runtime.GOOS
-
-	switch os {
-	case "windows":
-		fmt.Println("Windows.")
-	case "darwin":
-		fmt.Println("OS X.")
-	case "linux":
-		fmt.Println("Linux.")
-	default:
-		fmt.Printf("%s.\n", os)
-	}
-
-	// OTRA FORMA DE HACERLO
-
-	switch system := runtime.GOOS; system {
-	case "windows":
-		fmt.Println("Windows.")
-	case "darwin":
-		fmt.Println("OS X.")
-	case "linux":
-		fmt.Println("Linux.")
-	default:
-		fmt.Printf("%s.\n", system)
 	}
 }
