@@ -12,4 +12,9 @@ func main() {
 	hello.SayHello()
 	variables.MuestroEnteros()
 	variables.RestoVariables()
+
+	state, text := variables.ConvertToText(1950)
+
+	fmt.Println(state)
+	fmt.Println(text)
 }
