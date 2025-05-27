@@ -11,4 +11,5 @@ func main() {
 	fmt.Println("Hola Mundo!!!")
 	hello.SayHello()
 	variables.MuestroEnteros()
+	variables.RestoVariables()
 }
