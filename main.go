@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	hello "github.com/dmedina2150dev/learn-go/hola-mundo"
-	"main/variables"
+	"github.com/dmedina2150dev/learn-go/variables"
 )
 
 func main() {
