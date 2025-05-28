@@ -3,9 +3,10 @@ package main
 import (
 	"fmt"
 
+	controldeflujos "github.com/dmedina2150dev/learn-go/control-de-flujos"
+	// "github.com/dmedina2150dev/learn-go/ejercicios"
 	hello "github.com/dmedina2150dev/learn-go/hola-mundo"
 	"github.com/dmedina2150dev/learn-go/variables"
-	"github.com/dmedina2150dev/learn-go/ejercicios"
 )
 
 func main() {
@@ -21,11 +22,13 @@ func main() {
 
 	fmt.Print("\n\n")
 
-	var dato string
-	fmt.Print("Ingrea un número entero:")
-	fmt.Scanln(&dato)
+	// var dato string
+	// fmt.Print("Ingrea un número entero:")
+	// fmt.Scanln(&dato)
 
-	value, msg := ejercicios.CalculateAndTransform(dato)
+	// value, msg := ejercicios.CalculateAndTransform(dato)
 
-	fmt.Printf("valor: %d, y %s \n", value, msg)
+	// fmt.Printf("valor: %d, y %s \n", value, msg)
+
+	controldeflujos.Iterar()
 }
