@@ -20,7 +20,7 @@ func main() {
 	// fmt.Println(state)
 	// fmt.Println(text)
 
-	// fmt.Print("\n\n")
+	fmt.Print("\n\n")
 
 	// var dato string
 	// fmt.Print("Ingrea un número entero:")
@@ -31,4 +31,6 @@ func main() {
 	// fmt.Printf("valor: %d, y %s \n", value, msg)
 
 	// controldeflujos.Iterar()
+
+	// ejercicios.CreateTable()
 }
