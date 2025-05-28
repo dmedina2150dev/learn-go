@@ -105,3 +105,7 @@ func RestoVariables() {
 	// fmt.Println("No se puede mostrar", Num3)
 }
 ```
+
+### Guía de estilos para programar en GO
+
+[Github](https://github.com/uber-go/guide/blob/master/style.md#test-tables)
