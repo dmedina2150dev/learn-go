@@ -61,3 +61,34 @@ func CreateTableByBufio() {
 
 	fmt.Printf("Fin de la tabla \n")
 }
+
+func CreateTableMultiplySave() string {
+	scanner := bufio.NewScanner(os.Stdin)
+	var valorNum int
+	var err error
+	var texto string
+
+	for {
+		fmt.Println("Ingresa un número del entero: ")
+		if scanner.Scan() {
+			valorNum, err = strconv.Atoi(scanner.Text())
+			if err != nil {
+				continue
+			} else {
+				break
+			}
+		}
+	}
+
+	texto += fmt.Sprintf("Esta en la tabla del: %d \n", valorNum)
+
+	// TODO: Haremos una paquete para guardar en el archivo
+	for i := 1; i <= 10; i++ {
+		// TODO: Cambiaremos a SprintF --> Para que nos retorne un string
+		texto += fmt.Sprintf("%d x %d = %d \n", valorNum, i, valorNum*i)
+	}
+
+	texto += fmt.Sprintf("Fin de la tabla")
+
+	return texto
+}

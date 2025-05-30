@@ -4,7 +4,8 @@ import (
 	"fmt"
 
 	// controldeflujos "github.com/dmedina2150dev/learn-go/control-de-flujos"
-	"github.com/dmedina2150dev/learn-go/ejercicios"
+	// "github.com/dmedina2150dev/learn-go/ejercicios"
+	"github.com/dmedina2150dev/learn-go/files"
 	hello "github.com/dmedina2150dev/learn-go/hola-mundo"
 	// "github.com/dmedina2150dev/learn-go/variables"
 )
@@ -33,5 +34,10 @@ func main() {
 	// controldeflujos.Iterar()
 
 	// ejercicios.CreateTable()
-	ejercicios.CreateTableByBufio()
+	// fmt.Println(ejercicios.CreateTableMultiplySave())
+
+	// files.SaveTabla()
+
+	// files.SumaTabla()
+	files.ReadFile()
 }
