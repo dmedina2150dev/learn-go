@@ -6,9 +6,11 @@ import (
 	// controldeflujos "github.com/dmedina2150dev/learn-go/control-de-flujos"
 	// "github.com/dmedina2150dev/learn-go/ejercicios"
 	// "github.com/dmedina2150dev/learn-go/files"
+
 	hello "github.com/dmedina2150dev/learn-go/hola-mundo"
-	"github.com/dmedina2150dev/learn-go/plays"
+	// "github.com/dmedina2150dev/learn-go/plays"
 	// "github.com/dmedina2150dev/learn-go/variables"
+	// "github.com/dmedina2150dev/learn-go/funciones"
 )
 
 func main() {
@@ -42,5 +44,9 @@ func main() {
 	// files.SumaTabla()
 	// files.ReadFile()
 
-	plays.Play()
+	// plays.Play()
+
+	// Clousure
+	// funciones.Calculos()
+	// funciones.CallClousure()
 }
