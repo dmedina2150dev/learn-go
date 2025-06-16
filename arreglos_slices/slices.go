@@ -31,7 +31,7 @@ func Capacidad() {
 
 	fmt.Printf("Largo %d, Capacidad %d", len(elementos), cap(elementos))
 
-	nums := make([]int, 0, 0)
+	nums := make([]int, 0) // O se puede hacer de esta forma
 
 	for i := 0; i < 100; i++ {
 		nums = append(nums, i)
