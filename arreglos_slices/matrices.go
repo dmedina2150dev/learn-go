@@ -33,4 +33,7 @@ func UnderArrays() {
 
 	fmt.Println(m)
 
+	// 7. Modificar Matriz Bidimencional
+	m[1][2] = 20
+	fmt.Println(m)
 }
