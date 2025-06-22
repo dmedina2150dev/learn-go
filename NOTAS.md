@@ -152,3 +152,43 @@ func main() {
     fmt.Println("Capacidad del slice:", cap(slice)) // Imprime: Capacidad del slice: 5
 }
 ```
+
+
+## Mapas 
+
+Un mapa se puede definir de dos maneras. 
+
+Una es con el `make`, no hace falta agregarle la longitud, ya que no es un vector
+
+Ejemplo
+```go
+paises := make(map[string]string)
+```
+
+La otra opción es por asignación directa, la diferencia es que nos obliga a realizar inmediatamente los valores y las keys
+
+Ejemplo
+```go
+campeonato := map[string]int{
+  "Real Madrid": 49,
+  "Barcelona": 30,
+  "Atletico de Madrid": 29,
+  "Real Sociedad": 28
+}
+```
+`map[string]`--> tipado del key
+`map[string]string`--> tipado del value
+
+#### Para eliminar un elemento de un mapa
+
+Para esto tenemos la funcion `delete()``
+
+Ejemplo
+
+```go
+delete(campeonato, "Real Sociedad")
+```
+
+Si no lo encuenta no eliminara nada
+
+

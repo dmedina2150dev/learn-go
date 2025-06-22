@@ -3,21 +3,21 @@ package main
 import (
 	"fmt"
 
-	// controldeflujos "github.com/dmedina2150dev/learn-go/control-de-flujos"
-	// "github.com/dmedina2150dev/learn-go/ejercicios"
+	"github.com/dmedina2150dev/learn-go/mapas"
 	// "github.com/dmedina2150dev/learn-go/files"
-
-	"github.com/dmedina2150dev/learn-go/arreglos_slices"
 	// "github.com/dmedina2150dev/learn-go/funciones"
-	hello "github.com/dmedina2150dev/learn-go/hola-mundo"
+	// "github.com/dmedina2150dev/learn-go/ejercicios"
+	// "github.com/dmedina2150dev/learn-go/arreglos_slices"
 	// "github.com/dmedina2150dev/learn-go/plays"
 	// "github.com/dmedina2150dev/learn-go/variables"
 	// "github.com/dmedina2150dev/learn-go/funciones"
+	// hello "github.com/dmedina2150dev/learn-go/hola-mundo"
+	// controldeflujos "github.com/dmedina2150dev/learn-go/control-de-flujos"
 )
 
 func main() {
 	fmt.Println("Iniciando GO!")
-	hello.SayHello()
+	// hello.SayHello()
 	// variables.MuestroEnteros()
 	// variables.RestoVariables()
 
@@ -54,5 +54,6 @@ func main() {
 	// funciones.Exponencia(2)
 	// arreglos_slices.MuestroArreglos()
 	// arreglos_slices.MuestroSlices()
-	arreglos_slices.Capacidad()
+	// arreglos_slices.Capacidad()
+	mapas.MostrarMapas()
 }
