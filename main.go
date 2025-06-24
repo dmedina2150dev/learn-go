@@ -8,7 +8,7 @@ import (
 	// "github.com/dmedina2150dev/learn-go/files"
 	// "github.com/dmedina2150dev/learn-go/funciones"
 	// "github.com/dmedina2150dev/learn-go/ejercicios"
-	// "github.com/dmedina2150dev/learn-go/arreglos_slices"
+	"github.com/dmedina2150dev/learn-go/arreglos_slices"
 	// "github.com/dmedina2150dev/learn-go/plays"
 	// "github.com/dmedina2150dev/learn-go/variables"
 	// "github.com/dmedina2150dev/learn-go/funciones"
@@ -37,7 +37,7 @@ func main() {
 	// files.SumaTabla()
 	// files.ReadFile()
 	// plays.Play()
-	
+
 	// Clousure
 	// funciones.Calculos()
 	// funciones.CallClousure()
@@ -45,6 +45,7 @@ func main() {
 	// arreglos_slices.MuestroArreglos()
 	// arreglos_slices.MuestroSlices()
 	// arreglos_slices.Capacidad()
+	arreglos_slices.UnderSlices()
 	// mapas.MostrarMapas()
 	// users.AltaUsuario()
 }
