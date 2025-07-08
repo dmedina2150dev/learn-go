@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 
+	"github.com/dmedina2150dev/learn-go/server"
 	// "github.com/dmedina2150dev/learn-go/users"
-	"github.com/dmedina2150dev/learn-go/mapas"
+	// "github.com/dmedina2150dev/learn-go/mapas"
 	// "github.com/dmedina2150dev/learn-go/files"
 	// "github.com/dmedina2150dev/learn-go/funciones"
 	// "github.com/dmedina2150dev/learn-go/ejercicios"
@@ -47,6 +48,8 @@ func main() {
 	// arreglos_slices.Capacidad()
 	// arreglos_slices.UnderSlices()
 	// mapas.MostrarMapas()
-	mapas.UndeMap()
+	// mapas.UndeMap()
 	// users.AltaUsuario()
+
+	server.InitServer()
 }
