@@ -98,3 +98,72 @@ go run [name-main-file].go
 go build [name-main-file].go
 
 ```
+
+## Comandos para ejecutar los tests
+
+### Para ejecutar todos los tests del proyecto
+
+```go
+go test ./...
+
+```
+
+### Para ejecutar todos los tests del proyecto con verbose
+
+Verbose da más detalle interno de cada test
+
+```go
+go test ./... -v
+
+```
+
+### Para ver el coverage del proyecto 
+```go
+go test -cover ./...
+
+```
+
+### Coverage detallado con reporte HTML
+
+Un archivo coverage.out con los datos de coverage
+Un archivo coverage.html que puedes abrir en el navegador para ver el coverage línea por línea
+
+```go
+go test -coverprofile=coverage.out ./...
+go tool cover -html=coverage.out -o coverage.html
+```
+
+### Coverage con porcentaje total
+
+El flag -func muestra el coverage por función y el total al final.
+
+```go
+go test -coverprofile=coverage.out ./...
+go tool cover -func=coverage.out
+```
+
+### Para un paquete específico
+
+```go
+go test -cover ./ruta_relativa_del_paquete
+```
+
+### Coverage con verbose para más detalles
+
+```go
+go test -v -cover ./...
+```
+
+###  Coverage con umbral mínimo
+
+Puedes crear un script que falle si el coverage está por debajo de cierto porcentaje:
+
+```go
+go test -coverprofile=coverage.out ./...
+COVERAGE=$(go tool cover -func=coverage.out | grep total | awk '{print $3}' | sed 's/%//')
+if (( $(echo "$COVERAGE < 80" | bc -l) )); then
+    echo "Coverage is below 80%: $COVERAGE%"
+    exit 1
+fi
+```
+
