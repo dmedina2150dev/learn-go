@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/dmedina2150dev/learn-go/server"
+	"github.com/dmedina2150dev/learn-go/library/book"
+	// "github.com/dmedina2150dev/learn-go/server"
 	// "github.com/dmedina2150dev/learn-go/users"
 	// "github.com/dmedina2150dev/learn-go/mapas"
 	// "github.com/dmedina2150dev/learn-go/files"
@@ -51,5 +52,20 @@ func main() {
 	// mapas.UndeMap()
 	// users.AltaUsuario()
 
-	server.InitServer()
+	// server.InitServer()
+
+	// Aqui estaria mal si las propiedades del struc son privadas
+	// myBook2 := book.Book{
+	// 	title:  "Tu mama fue mia",
+	// 	author: "Tu mama",
+	// 	pages:  200,
+	// }
+	// myBook2 := book.Book{
+	// 	"Tu mama fue mia",
+	// 	"Tu mama",
+	// 	200,
+	// }
+	myBook := book.NewBook("Tu mama fue mia", "Tu mama", 200)
+
+	myBook.PrintInfo()
 }
