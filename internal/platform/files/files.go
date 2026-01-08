@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/dmedina2150dev/learn-go/ejercicios"
+	"github.com/dmedina2150dev/learn-go/internal/ejercicios"
 )
 
 var fileName string = "./files/tablas/tablas.txt"

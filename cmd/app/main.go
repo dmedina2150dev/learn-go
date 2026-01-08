@@ -2,31 +2,36 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/dmedina2150dev/learn-go/library/book"
-	// "github.com/dmedina2150dev/learn-go/server"
-	// "github.com/dmedina2150dev/learn-go/users"
-	// "github.com/dmedina2150dev/learn-go/mapas"
-	// "github.com/dmedina2150dev/learn-go/files"
-	// "github.com/dmedina2150dev/learn-go/funciones"
-	// "github.com/dmedina2150dev/learn-go/ejercicios"
-	// "github.com/dmedina2150dev/learn-go/arreglos_slices"
-	// "github.com/dmedina2150dev/learn-go/plays"
-	// "github.com/dmedina2150dev/learn-go/variables"
-	// "github.com/dmedina2150dev/learn-go/funciones"
-	// hello "github.com/dmedina2150dev/learn-go/hola-mundo"
-	// controldeflujos "github.com/dmedina2150dev/learn-go/control-de-flujos"
+	"os"
 )
 
 func main() {
+	if err := run(); err != nil {
+		_, _ = fmt.Fprintf(os.Stderr, "app startup error: %s\\n", err)
+		os.Exit(1)
+	}
+}
+
+func run() error {
 	fmt.Println("Iniciando GO!")
-	fmt.Print("\n\n")
-	// hello.SayHello()
-	// variables.MuestroEnteros()
-	// variables.RestoVariables()
-	// state, text := variables.ConvertToText(1950)
-	// fmt.Println(state)
-	// fmt.Println(text)
+
+	resources := InitResources()
+
+	fmt.Println()
+	fmt.Println("Saludos -> Primeros pasos --->")
+	fmt.Println(resources.hello.Saludo)
+	fmt.Println(resources.hello.SaludoLib)
+	fmt.Println()
+
+	fmt.Println()
+	fmt.Println("Impresión Variables --->")
+	resources.variables.VarsNumeric()
+	resources.variables.RestVars()
+	state, text := resources.variables.Convert(1950)
+	fmt.Println(state)
+	fmt.Println(text)
+	fmt.Println()
+
 	// var dato string
 	// fmt.Print("Ingrea un número entero:")
 	// fmt.Scanln(&dato)
@@ -65,7 +70,9 @@ func main() {
 	// 	"Tu mama",
 	// 	200,
 	// }
-	myBook := book.NewBook("Tu mama fue mia", "Tu mama", 200)
+	// myBook := book.NewBook("Tu mama fue mia", "Tu mama", 200)
 
-	myBook.PrintInfo()
+	// myBook.PrintInfo()
+
+	return nil
 }

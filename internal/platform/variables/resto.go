@@ -19,12 +19,11 @@ func RestoVariables() {
 
 	fmt.Println(Nombre)
 	fmt.Println(Estado)
-	fmt.Println(Sueldo)
+	fmt.Println("Sueldo: ", Sueldo)
 	fmt.Println(Fecha)
 }
 
 func ConvertToText(numero int) (bool, string) {
-	// var texto string
 	texto := strconv.Itoa(numero)
 	return true, texto
 }

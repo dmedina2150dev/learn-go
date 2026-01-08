@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dmedina2150dev/learn-go/modelos"
+	"github.com/dmedina2150dev/learn-go/internal/platform/modelos"
 )
 
 func AltaUsuario() {
