@@ -14,3 +14,13 @@
 - [Inyección de dependencias en Go: un camino de principiante a experto](https://dev.to/leapcell/go-dependency-injection-a-journey-from-beginner-to-expert-1ddf)
 
 - [Guia de estilos de Uber](https://github.com/uber-go/guide/blob/master/style.md#uber-go-style-guide)
+
+- [gin-gonic](https://github.com/gin-gonic/gin)
+
+- [Apuntes de GO](https://apuntes.de/golang/#gsc.tab=0)
+
+- [Go by Example](https://gobyexample.com/)
+
+- [GoLean](https://go.dev/learn/)
+
+- [Go Wiki](https://go.dev/wiki/NonEnglish#spanish---espanol)
