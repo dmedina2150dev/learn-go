@@ -10,7 +10,7 @@ func NewClient() *VariablesModel {
 
 	return &VariablesModel{
 		RestVars:    RestoVariables,
-		Convert:     func(numero int) (bool, string) { return ConvertToText(numero) },
+		Convert:     ConvertToText,
 		VarsNumeric: MuestroEnteros,
 	}
 }

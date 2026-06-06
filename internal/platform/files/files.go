@@ -9,7 +9,7 @@ import (
 	"github.com/dmedina2150dev/learn-go/internal/ejercicios"
 )
 
-var fileName string = "./files/tablas/tablas.txt"
+var fileName string = "./internal/platform/files/tablas/tablas.txt"
 
 func SaveTabla() {
 	var texto string = ejercicios.CreateTableMultiplySave()
